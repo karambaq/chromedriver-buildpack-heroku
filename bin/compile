@@ -1,4 +1,6 @@
-n/compile <build-dir> <cache-dir> <env-dir>
+
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir> <env-dir>
 
 set -o errexit
 set -o pipefail
