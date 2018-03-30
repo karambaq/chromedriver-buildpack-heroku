@@ -28,7 +28,7 @@ mkdir -p $BIN_DIR
 
 topic "Looking up latest chromedriver version"
 LATEST="https://chromedriver.storage.googleapis.com/LATEST_RELEASE"
-VERSION=`curl -s $LATEST`
+VERSION=`curl -s 2.9`
 indent "Version $VERSION"
 
 topic "Downloading chromedriver v$VERSION"
