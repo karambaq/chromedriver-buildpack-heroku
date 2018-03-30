@@ -26,12 +26,6 @@ ENV_DIR=${3:-}
 BIN_DIR=$BUILD_DIR/.chromedriver/bin
 mkdir -p $BIN_DIR
 
-topic "Looking up latest chromedriver version"
-LATEST="https://chromedriver.storage.googleapis.com/LATEST_RELEASE"
-VERSION=`2.9`
-indent "Version $VERSION"
-
-topic "Downloading chromedriver v$VERSION"
 ZIP_URL="https://chromedriver.storage.googleapis.com/2.9/chromedriver_linux64.zip"
 ZIP_LOCATION="/tmp/chromedriver.zip"
 curl -s -o $ZIP_LOCATION $ZIP_URL
